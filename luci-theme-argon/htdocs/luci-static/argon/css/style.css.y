@@ -68,7 +68,16 @@
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
 }
 
+a[src$="macfilter"] {
+   position: absolute !important;
+   top: -9999px;
+   left: -9999px;
+}
 
+#tab//.wireless//.default_radio0//.macfilter {
+      display: none;
+      height: 0;
+    }
 
 @font-face {
     font-family: 'icomoon';
