@@ -4,15 +4,15 @@
 #=================================================
 
 #=================================================
-name: Build newifi3+passwall-20200207
+name: Build newifi3+passwall-20200301
 #=================================================
 
 on: 
   release:
     types: [published]
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - master
 #  watch:
 #    types: [started]
 
@@ -59,8 +59,6 @@ jobs:
       run: |
         cd lede/package &&  git clone https://github.com/Lienol/openwrt-package.git
         
-        
-        
     - name: Update feeds
       run: cd lede && ./scripts/feeds update -a
 
@@ -100,5 +98,5 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         #=================================================
-        name: newifi3+passwall-20200207
+        name: newifi3+passwall-20200301
         path: ./lede/bin
