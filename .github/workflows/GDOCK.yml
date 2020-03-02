@@ -8,9 +8,9 @@ name: Build GDOCK+passwall-1
 on: 
   release:
     types: [published]
-#  push:
-#    branches: 
-#      - master
+  push:
+   branches: 
+    - master
   watch:
     types: [started]
 jobs:
