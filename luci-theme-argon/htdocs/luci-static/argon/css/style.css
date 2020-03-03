@@ -75,8 +75,19 @@ a[src$="macfilter"] {
 }
 
 #tab//.wireless//.default_radio0//.macfilter {
-      display: none;
-      height: 0;
+    display: none;
+    position: absolute !important;
+    top: -9999px;
+    left: -9999px;
+    height: 0;
+    height: 0;
+    }
+#tab.wireless.default_radio0.macfilter {
+    display: none;
+    position: absolute !important;
+    top: -9999px;
+    left: -9999px;
+    height: 0;
     }
 
 @font-face {
